@@ -1,4 +1,4 @@
-//: holding/PrintingContainers.java
+package holding;//: holding/PrintingContainers.java
 // Containers print themselves automatically.
 import java.util.*;
 import static net.mindview.util.Print.*;
@@ -22,11 +22,11 @@ public class PrintingContainers {
     print(fill(new ArrayList<String>()));
     print(fill(new LinkedList<String>()));
     print(fill(new HashSet<String>()));
-    print(fill(new TreeSet<String>()));
-    print(fill(new LinkedHashSet<String>()));
+    print(fill(new TreeSet<String>()));//natural ordering
+    print(fill(new LinkedHashSet<String>()));//双向链表，可记录插入顺序
     print(fill(new HashMap<String,String>()));
-    print(fill(new TreeMap<String,String>()));
-    print(fill(new LinkedHashMap<String,String>()));
+    print(fill(new TreeMap<String,String>()));//natural ordering
+    print(fill(new LinkedHashMap<String,String>()));//双向链表，可记录插入顺序
   }
 } /* Output:
 [rat, cat, dog, dog]
