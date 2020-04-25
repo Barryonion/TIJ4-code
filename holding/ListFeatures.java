@@ -35,6 +35,7 @@ public class ListFeatures {
     print("12: " + pets.containsAll(sub));
     List<Pet> copy = new ArrayList<Pet>(pets);
     sub = Arrays.asList(pets.get(1), pets.get(4));
+    print("12_1: " + pets);
     print("sub: " + sub);
     copy.retainAll(sub);
     print("13: " + copy);
